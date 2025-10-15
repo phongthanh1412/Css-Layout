@@ -1,0 +1,393 @@
+
+/* ========== 1. General Utility & Safari Fallbacks ========== */
+@media (min-width: 1324px) {
+  .coupon-box .flex-wrap {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center;
+  }
+}
+
+/* Safari Flexbox and Gradient Fallbacks */
+/* ...existing code for Safari fallbacks here... */
+
+/* ========== 2. Body/Background ========== */
+.bg-color {
+  background: linear-gradient(180deg, #c9ccc6 100%);
+}
+
+/* ========== 3. Header & Navigation ========== */
+.nav-dash-sep {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 2px;
+}
+.bx.bxs-envelope {
+  transition: color 0.1s;
+}
+.bx.bxs-envelope:hover {
+  color: #7a807a;
+}
+
+/* ========== 4. Banner Section ========== */
+.banner-container .flex {
+  margin-bottom: 0;
+  white-space: nowrap;
+}
+.banner-container .text-3xl {
+  margin-right: 0.5rem;
+}
+
+/* ========== 5. Main Deal/Coupon Box ========== */
+.coupon-box {
+  border-radius: 16px;
+  background: #fff;
+  border: 1.5px solid #959596; /* light gray */
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.08);
+}
+.coupon-bg {
+  opacity: 0.12;
+  z-index: 0;
+  border-radius: 8px;
+}
+.btn-color {
+  background: linear-gradient(180deg, #e0efc6 0%, #b2d98c 100%);
+  border: 1px solid #b2d98c;
+  color: #5a7c2b;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+  transition: background 0.2s;
+}
+.btn-color:hover {
+  background: linear-gradient(180deg, #d0e6b8 0%, #a2c97c 100%);
+}
+.btn-subscribe {
+  background: linear-gradient(180deg, #c3d0d9 0%, #80909b 100%);
+  color: #4a5a63;
+  border: 1px solid #a2b5c3;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.04);
+  transition: background 0.2s;
+}
+.btn-subscribe:hover {
+  background: linear-gradient(180deg, #b0c2d1 0%, #8fa3b3 100%);
+}
+
+/* ========== 6. Grid/Info Blocks ========== */
+.deal-image {
+  background-color: rgb(247, 74, 74);
+}
+.partial-bottom-dash {
+  position: relative;
+}
+.partial-bottom-dash::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 95%;
+  border-bottom: 2px dashed #D1D5DB;
+}
+
+/* ========== 7. Footer ========== */
+.envelope-bg {
+  background: repeating-linear-gradient(135deg, #e53e3e 0 20px, #3182ce 0 40px);
+  opacity: 0.2;
+  z-index: 0;
+}
+
+/* ========== 8. Misc/Decorative ========== */
+.serrated {
+  position: relative;
+  overflow: visible;
+}
+.serrated-top,
+.serrated-bottom {
+  display: flex;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 12px;
+  z-index: 2;
+  justify-content: space-around;
+}
+.serrated-top {
+  top: -12px;
+  flex-direction: row;
+}
+.serrated-bottom {
+  bottom: -12px;
+  flex-direction: row;
+}
+.serrated-circle {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+  margin-left: -6px;
+}
+
+/* ========== 9. Layout Helpers ========== */
+.flex-responsive {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Ultra small device styles (max-width: 320px) */
+@media (max-width: 320px) {
+  .text-8xl { font-size: 2.2rem; line-height: 0.85; }
+  .text-6xl { font-size: 1.7rem; }
+  .text-3xl { font-size: 1rem; }
+  .text-2xl { font-size: 0.85rem; }
+  nav a { font-size: 0.7rem; padding-left: 0.15rem; padding-right: 0.15rem; }
+  .py-10.px-20 { padding: 0.5rem 0.1rem; }
+  .banner-container .flex { margin-bottom: 0.5rem; }
+}
+
+/* Small mobile device styles (max-width: 375px) */
+@media (max-width: 375px) {
+  .text-8xl { font-size: 2.5rem; }
+  .text-6xl { font-size: 2rem; }
+  .text-3xl { font-size: 1.1rem; }
+  .text-2xl { font-size: 0.95rem; }
+  nav a { font-size: 0.72rem; padding-left: 0.18rem; padding-right: 0.18rem; }
+  .py-10.px-20 { padding: 0.6rem 0.15rem; }
+  .banner-container .flex { margin-bottom: 0.6rem; }
+}
+
+/* Large mobile device styles (max-width: 425px) */
+@media (max-width: 425px) {
+  .text-8xl { font-size: 2.8rem; }
+  .text-6xl { font-size: 2.2rem; }
+  .text-3xl { font-size: 1.2rem; }
+  .text-2xl { font-size: 1rem; }
+  nav a { font-size: 0.74rem; padding-left: 0.2rem; padding-right: 0.2rem; }
+  .py-10.px-20 { padding: 0.7rem 0.2rem; }
+  .banner-container .flex { margin-bottom: 0.7rem; }
+}
+
+/* Extra small device styles */
+@media (max-width: 480px) {
+
+  /* Header and Title */
+  .text-8xl {
+    font-size: 3rem;
+    line-height: 0.9;
+  }
+
+  /* Navigation */
+  nav a {
+    font-size: 0.75rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  /* Banner container and text spacing */
+  .banner-container .flex {
+    margin-bottom: 0.75rem;
+  }
+
+  .banner-container .flex:last-child {
+    margin-bottom: 0;
+  }
+
+  .banner-container .text-3xl {
+    font-size: 1.25rem;
+  }
+
+  .banner-container .text-2xl {
+    font-size: 1rem;
+  }
+
+  /* Banner */
+  .py-10.px-20 {
+    padding: 0.75rem 0.25rem;
+  }
+
+  /* Text sizing */
+  .text-6xl {
+    font-size: 2.5rem;
+  }
+
+  .text-3xl {
+    font-size: 1.25rem;
+  }
+
+  .text-2xl {
+    font-size: 1rem;
+  }
+
+  /* Stack all flex elements */
+  .flex {
+    flex-direction: column;
+  }
+
+  /* Override grid columns */
+  .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+
+  /* Header and Title */
+  .text-8xl {
+    font-size: 4rem;
+    line-height: 1;
+  }
+
+  /* Navigation */
+  nav {
+    flex-wrap: wrap;
+    margin-top: 0.25rem;
+    width: 100%;
+  }
+
+  /* Responsive layout helpers */
+  .flex-responsive {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav a {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.875rem;
+  }
+  
+  /* Coupon Box */
+  .coupon-box {
+    margin-top: 1rem;
+    padding: 0.75rem;
+  }
+
+  /* Banner */
+  .py-10.px-20 {
+    padding: 1rem 0.5rem;
+  }
+
+  /* Adjust banner content for small screens */
+  .banner-container .w-full {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* Text sizing */
+  .text-6xl {
+    font-size: 3rem;
+  }
+
+  .text-3xl {
+    font-size: 1.5rem;
+  }
+
+  .text-2xl {
+    font-size: 1.25rem;
+  }
+
+  /* Grid cells */
+  .partial-bottom-dash::after {
+    width: 100%;
+  }
+
+  /* Button sizing */
+  .btn-color {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+
+  /* Deal grid */
+  .grid {
+    gap: 0.5rem;
+  }
+
+  /* Footer */
+  .text-center.text-gray-500.text-sm.p-4 {
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+
+  /* Deal countdown timers */
+  .text-xs.text-gray-400 {
+    font-size: 0.65rem;
+  }
+}
+
+
+@media (min-width: 769px) {
+
+  /* Header and Layout */
+  .text-8xl {
+    font-size: 6rem;
+  }
+
+  /* Banner container */
+  .banner-container .w-full.py-10.px-20 {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  /* Keep original spacing for desktop */
+  .banner-container .flex {
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* Responsive layout helpers */
+  .flex-responsive {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Grid layout */
+  .grid-cols-3>div {
+    padding-right: 1rem;
+  }
+
+  /* Coupon Box */
+  .coupon-box {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Banner spacing */
+  .py-10.px-20 {
+    padding: 2.5rem 3rem;
+  }
+
+  /* Navigation */
+  nav {
+    margin-top: 0.5rem;
+  }
+
+  nav a {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+}
+
+/* Prevent banner overflow at large screens */
+@media (min-width: 1024px) {
+  /* Banner: allow wrapping, center, use gap, like 769px+ */
+  .banner-container .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+  }
+  .banner-container .text-center {
+    max-width: none;
+  }
+  .banner-container .text-5xl {
+    font-size: 2.5rem;
+  }
+  .banner-container .text-xl {
+    font-size: 1rem;
+  }
+}

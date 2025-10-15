@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealers</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-color font-sans">
+    <!-- Header -->
+    <header
+        class="w-full mx-auto my-4 md:my-8 gap-8 px-8 sm:px-16 md:px-24 lg:px-40 pb-6 flex flex-col md:flex-row md:items-start md:justify-between">
+        <div class="w-full md:w-1/2 text-center md:text-left">
+            <span class="text-8xl mx-0 font-bold italic text-gray-700 block"
+                style="font-family: 'Brush Script MT', cursive;">Dealers</span>
+            <nav
+                class="mt-2 md:mt-0 flex flex-wrap items-center justify-center md:justify-start text-sm text-gray-700 space-x-1 md:space-x-0">
+                <a href="#" class="px-2 text-md font-semibold hover:underline ">Home</a>
+                <span class="hidden md:inline nav-dash-sep mx-2 my-1 px-2" aria-hidden="true">
+                    <svg width="2" height="18" viewBox="0 0 2 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="display:block">
+                        <line x1="1" y1="0" x2="1" y2="18" stroke="#222" stroke-width="2" stroke-dasharray="3,3" />
+                    </svg>
+                </span>
+                <a href="#" class="px-4 font-semibold hover:underline">About</a>
+                <span class="hidden md:inline nav-dash-sep mx-2 my-1 px-2" aria-hidden="true">
+                    <svg width="2" height="18" viewBox="0 0 2 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="display:block">
+                        <line x1="1" y1="0" x2="1" y2="18" stroke="#222" stroke-width="2" stroke-dasharray="3,3" />
+                    </svg>
+                </span>
+                <a href="#" class="px-4 font-semibold hover:underline">All Deals</a>
+                <span class="hidden md:inline nav-dash-sep mx-2 my-1 px-2" aria-hidden="true">
+                    <svg width="2" height="18" viewBox="0 0 2 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        style="display:block">
+                        <line x1="1" y1="0" x2="1" y2="18" stroke="#222" stroke-width="2" stroke-dasharray="3,3" />
+                    </svg>
+                </span>
+                <a href="#" class="px-4 font-semibold hover:underline flex items-center">Submit Your Deal
+                    <span class="hidden md:inline nav-dash-sep mx-2 my-1 px-2" aria-hidden="true">
+                        <svg width="2" height="18" viewBox="0 0 2 18" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="display:block">
+                            <line x1="1" y1="0" x2="1" y2="18" stroke="#222" stroke-width="2" stroke-dasharray="3,3" />
+                        </svg>
+                    </span>
+                </a>
+                <i class="bx bxs-envelope text-lg align-middle my-1" style="margin-left:2px;"></i>
+
+            </nav>
+        </div>
+        <div class="mt-4 md:mt-0 md:ml-8 w-full md:w-1/2">
+            <div class="relative bg-white rounded shadow p-4 pt-6">
+                <div class="absolute left-0 top-0 w-full h-6 rounded-t bg-white overflow-hidden">
+                    <div class="w-full h-6 flex flex-row">
+                        <div class="h-4 w-6 bg-red-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-red-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-red-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-red-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-red-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-red-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-red-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-red-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-red-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-red-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                        <div class="h-4 w-6 bg-red-400 inline-block" style="clip-path: polygon(0 0, 100% 0, 0 100%);">
+                        </div>
+                        <div class="h-4 w-6 bg-blue-400 inline-block"
+                            style="clip-path: polygon(100% 0, 100% 100%, 0 100%);"></div>
+                    </div>
+                </div>
+                <div class="pt-2">
+                    <div class="font-semibold text-gray-800 mb-4">Sign up for free to get deals directly to your mailbox
+                    </div>
+                    <form class="flex flex-row mb-4 items-center space-x-2">
+                        <input type="email" placeholder="Enter Your E-mail Address"
+                            class="flex-1 border border-gray-300 rounded px-2 py-2 text-sm focus:outline-none">
+                        <button type="submit"
+                            class="btn-subscribe text-xs px-3 py-2 rounded hover:bg-gray-400">Subscribe
+                            Me</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Unified Big Container -->
+    <div class="w-full px-8 sm:px-16 md:px-24 lg:px-40 box-border">
+        <div class="w-full mx-auto my-8 p-2 sm:p-4 md:p-6 lg:p-10 bg-white shadow-md">
+            <!-- Main Deal Section -->
+            <div class="flex-responsive gap-6 md:gap-10 mx-2 md:mx-4 items-stretch h-full">
+                <div class="w-full md:w-2/3 mb-4 md:mb-0 flex flex-col h-full">
+                    <h2 class="text-3xl font-bold mb-4 md:mb-8">This is one very amazing deal</h2>
+                    <div class="deal-image h-64 md:h-80 mb-6 md:mb-10 border-4 md:border-8 border-white shadow-lg">
+                    </div>
+                    <p class="text-gray-600 text-sm md:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit,
+                        sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <aside class="w-full mt-2 md:mt-0 mb-4 md:w-1/3 pl-0 md:pl-4 flex flex-col items-center h-full">
+                    <div
+                        class="coupon-box w-full max-w-md md:max-w-full mx-auto bg-white border border-gray-200 relative p-3 md:p-4 pt-6 mb-3 md:mb-4 flex flex-col items-center">
+
+                        <div class="coupon-bg absolute inset-0 pointer-events-none"></div>
+                        <div class="relative z-10 w-full flex flex-col items-center">
+                            <div class="text-gray-400 font-semibold text-base text-center">This deal will end in:</div>
+                            <div class="w-full my-2 text-center">
+                                <div class="h-px bg-gray-200"></div>
+                                <div class="h-px bg-gray-200 mt-1"></div>
+                                <div class="py-2 font-bold text-gray-700">6 days 1 hrs 52 min 51 sec</div>
+                                <div class="h-px bg-gray-200 mt-1"></div>
+                                <div class="h-px bg-gray-200 mt-1"></div>
+                            </div>
+                            <div class="w-full py-4 mb-0 mt-0 flex flex-col items-center">
+                                <div class="text-gray-400 text-md font-semibold mb-1">Discount</div>
+                                <div class="text-6xl font-bold text-gray-700">43%</div>
+                            </div>
+                            <div class="w-full border-t-2 border-dashed border-gray-200 mb-4"></div>
+                            <div class="flex justify-between w-full mb-4">
+                                <div class="flex flex-col items-center flex-1">
+                                    <span class="text-gray-400 text-md font-semibold">Deal Value</span>
+                                    <span class="font-bold text-lg text-gray-700">$47</span>
+                                </div>
+                                <div class="flex flex-col items-center flex-1">
+                                    <span class="text-gray-400 text-md font-semibold">You Save</span>
+                                    <span class="font-bold text-lg text-gray-700">$20</span>
+                                </div>
+                            </div>
+                            <div class="w-full border-t-2 border-dashed border-gray-200 mb-4"></div>
+                            <div class="flex flex-wrap gap-3 w-full mb-4 mt-4 justify-center">
+                                <div class="flex items-center space-x-2 flex-1">
+                                    <button type="button"
+                                        class="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded border border-blue-300 bg-gradient-to-b from-white to-blue-50 shadow-sm w-full">
+                                        <svg viewBox="0 0 24 24" class="w-4 h-4" aria-hidden="true">
+                                            <path fill="#1DA1F2"
+                                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 12 7.47v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                                        </svg>
+                                        <span class="text-blue-700">Tweet</span>
+                                    </button>
+                                    <span
+                                        class="text-xs font-semibold px-3 py-1 rounded border border-blue-300 bg-white text-blue-700">9</span>
+                                </div>
+                                <div class="flex items-center space-x-2 flex-1">
+                                    <button type="button"
+                                        class="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded border border-indigo-300 bg-gradient-to-b from-white to-indigo-50 shadow-sm w-full">
+                                        <svg viewBox="0 0 24 24" class="w-4 h-4" aria-hidden="true">
+                                            <path fill="#1877F2"
+                                                d="M22.675 0h-21.35C.595 0 0 .593 0 1.326v21.348C0 23.404.595 24 1.326 24H12.82v-9.294H9.692V11.01h3.128V8.41c0-3.1 1.894-4.788 4.66-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.796.715-1.796 1.765v2.316h3.587l-.467 3.696h-3.12V24h6.114C23.404 24 24 23.404 24 22.674V1.326C24 .593 23.404 0 22.675 0z" />
+                                        </svg>
+                                        <span class="text-indigo-700">Like</span>
+                                    </button>
+                                    <span
+                                        class="text-xs font-semibold px-3 py-1 rounded border border-gray-300 bg-white text-gray-700">5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="text-lg md:text-xl w-full max-w-md md:max-w-full mx-auto mt-2 py-3 md:py-4 rounded-lg md:rounded-xl btn-color text-green-900 font-semibold shadow border border-green-300 transition">
+                        Buy this deal - 27$</button>
+                </aside>
+            </div>
+
+            <!-- Banner for font text -->
+            <div class="mt-8 mb-2 banner-container">
+                <div class="w-full py-6 sm:py-8 border-t-2 border-b-2 border-dashed border-gray-300 bg-white">
+                    <div class="flex flex-row justify-center items-center gap-10 sm:gap-16 md:gap-24 lg:gap-32">
+                        <div class="text-center lg:flex lg:items-center">
+                            <span class="text-3xl sm:text-4xl md:text-5xl italic text-gray-400 block lg:inline"
+                                style="font-family: 'Brush Script MT', cursive;">Dealers</span>
+                            <span
+                                class="text-sm sm:text-base md:text-xl text-gray-400 block mt-1 lg:mt-0 lg:ml-6">THEMES
+                                KINGDOM</span>
+                        </div>
+                        <div class="text-center lg:flex lg:items-center">
+                            <span class="text-3xl sm:text-4xl md:text-5xl italic text-gray-400 block lg:inline"
+                                style="font-family: 'Brush Script MT', cursive;">DovesMedic</span>
+                            <span
+                                class="text-sm sm:text-base md:text-xl text-gray-400 block mt-1 lg:mt-0 lg:ml-6">THEMES
+                                KINGDOM</span>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-3xl sm:text-4xl md:text-5xl italic text-gray-400 block lg:inline"
+                                style="font-family: 'Brush Script MT', cursive;">Sm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Combined 6-cell grid: 3 deals + 3 info blocks -->
+            <div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-4 ">
+                    <!-- Row 1: Deals -->
+                    <div class="text-center md:border-r-2 ml-4 border-dashed border-gray-300 partial-bottom-dash">
+                        <div class="font-semibold text-lg text-left mb-2 pl-2">Lorem Ipsum Dolor Deal &nbsp;&nbsp;
+                        </div>
+                        <div class="border border-gray-300 rounded mb-2 bg-white pb-2 mr-6">
+                            <div class="flex justify-center items-center pt-2 pb-2 mb-2">
+                                <div class="deal-image h-40 w-11/12 md:w-11/12 rounded-t"
+                                    style="box-sizing:content-box; background-clip:padding-box;"></div>
+                            </div>
+                            <div class="flex divide-x divide-gray-200">
+                                <div class="flex-1 py-2 px-2">
+                                    <div class="text-xs text-gray-500">Deal Value</div>
+                                    <div class="font-bold text-lg text-gray-700">$47</div>
+                                </div>
+                                <div class="flex-1 py-2 px-2">
+                                    <div class="text-xs text-gray-500">Discount</div>
+                                    <div class="font-bold text-lg text-gray-700">43%</div>
+                                </div>
+                                <div class="flex-1 py-2 px-2">
+                                    <div class="text-xs text-gray-500">You Save</div>
+                                    <div class="font-bold text-lg text-gray-700">$20</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 mb-6">
+                            <p class="text-xs text-gray-400 pl-1">71 days 23 hrs 38&nbsp; min36 sec</p>
+                            <button
+                                class="ml-2 mr-4 px-4 py-1 rounded text-green-900 btn-color bg-gradient-to-b from-lime-200 to-lime-400 border border-lime-300 text-green-900 font-semibold text-sm shadow hover:from-lime-300 hover:to-lime-500 transition">
+                                SEE DEAL</button>
+                        </div>
+                    </div>
+                    <div class="text-center md:border-r-2 ml-4 border-dashed border-gray-300 partial-bottom-dash">
+                        <div class="font-semibold text-lg text-left mb-2 pl-2">Lorem Ipsum Dolor Deal &nbsp;&nbsp;
+                        </div>
+                        <div class="border border-gray-300 rounded mb-2 bg-white pb-2 mr-6">
+                            <div class="flex justify-center items-center pt-2 pb-2 mb-2">
+                                <div class="deal-image h-40 w-11/12 md:w-11/12 rounded-t"
+                                    style="box-sizing:content-box; background-clip:padding-box;"></div>
+                            </div>
+                            <div class="flex divide-x divide-gray-200">
+                                <div class="flex-1 py-2 px-2">
+                                    <div class="text-xs text-gray-500">Deal Value</div>
+                                    <div class="font-bold text-lg text-gray-700">$47</div>
+                                </div>
+                                <div class="flex-1 py-2 px-2">
+                                    <div class="text-xs text-gray-500">Discount</div>
+                                    <div class="font-bold text-lg text-gray-700">43%</div>
+                                </div>
+                                <div class="flex-1 py-2 px-2">
+                                    <div class="text-xs text-gray-500">You Save</div>
+                                    <div class="font-bold text-lg text-gray-700">$20</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 mb-6">
+                            <p class="text-xs text-gray-400 pl-1">71 days 23 hrs 38&nbsp; min36 sec</p>
+                            <button
+                                class="ml-2 mr-4 px-4 py-1 rounded text-green-900 btn-color bg-gradient-to-b from-lime-200 to-lime-400 border border-lime-300 text-green-900 font-semibold text-sm shadow hover:from-lime-300 hover:to-lime-500 transition">SEE
+                                DEAL</button>
+                        </div>
+                    </div>
+                    <div class="text-center border-dashed ml-4  border-gray-300 partial-bottom-dash">
+                        <div class="font-semibold text-lg text-left mb-2 pl-2">Lorem Ipsum Dolor Deal &nbsp;&nbsp;
+                        </div>
+                        <div class="border border-gray-300 rounded mb-2 bg-white pb-2 mr-6">
+                            <div class="flex justify-center items-center pt-2 pb-2 mb-2">
+                                <div class="deal-image h-40 w-11/12 md:w-11/12 rounded-t"
+                                    style="box-sizing:content-box; background-clip:padding-box;"></div>
+                            </div>
+                            <div class="flex divide-x divide-gray-200">
+                                <div class="flex-1 py-2 px-2">
+                                    <div class="text-xs text-gray-500">Deal Value</div>
+                                    <div class="font-bold text-lg text-gray-700">$47</div>
+                                </div>
+                                <div class="flex-1 py-2 px-2">
+                                    <div class="text-xs text-gray-500">Discount</div>
+                                    <div class="font-bold text-lg text-gray-700">43%</div>
+                                </div>
+                                <div class="flex-1 py-2 px-2">
+                                    <div class="text-xs text-gray-500">You Save</div>
+                                    <div class="font-bold text-lg text-gray-700">$20</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between mt-4 mb-6">
+                            <p class="text-xs text-gray-400 pl-1">71 days 23 hrs 38&nbsp; min36 sec</p>
+                            <button
+                                class="ml-2 mr-4 px-4 py-1 rounded text-green-900 btn-color bg-gradient-to-b from-lime-200 to-lime-400 border border-lime-300 text-green-900 font-semibold text-sm shadow hover:from-lime-300 hover:to-lime-500 transition">SEE
+                                DEAL</button>
+                        </div>
+                    </div>
+                    <!-- Row 2: Info blocks -->
+                    <div class="ml-4 pt-6 md:border-r-2 border-dashed border-gray-300">
+                        <h3 class="font-bold mb-4 text-[20px]">About Our Deals</h3>
+                        <p class="text-gray-500 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing
+                            elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud.</p>
+                        <p class="text-gray-500 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis
+                            nostrud.</p>
+                    </div>
+                    <div class="ml-4 pt-6 md:border-r-2 border-dashed border-gray-300">
+                        <h3 class="font-bold mb-2">Twitter Buzz</h3>
+                        <div class="mb-6">
+                            <div class="mb-2 text-gray-700 text-[15px]">7 Photoshop tips for designing clean and modern
+                                websites <a href="#" class="text-green-700 font-medium">su.pr/1ruOpp</a></div>
+                            <span
+                                class="inline-block bg-gray-100 text-gray-400 text-xs rounded px-3 py-1 font-semibold">1Day
+                                Ago</span>
+                        </div>
+                        <div class="text-center md:border-r-2 ml-4 border-dashed border-gray-300 partial-bottom-dash">
+                        </div>
+                        <div class="mt-12">
+                            <div class="mb-2 text-gray-700 text-[15px]">7 Photoshop tips for designing clean and modern
+                                websites <a href="#" class="text-green-700 font-medium">su.pr/1ruOpp</a></div>
+                            <span
+                                class="inline-block bg-gray-100 text-gray-400 text-xs rounded px-3 py-1 font-semibold">1Day
+                                Ago</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ml-4 pt-6">
+                            <h3 class="font-bold mb-2">Other Pages</h3>
+                            <div class="divide-y-2 divide-dashed divide-gray-300">
+                                <a href="#" class="block py-4 text-green-700 hover:text-green-900 transition">Home</a>
+                                <a href="#" class="block py-4 text-green-700 hover:text-green-900 transition">About Our
+                                    Deals</a>
+                                <a href="#" class="block py-4 text-green-700 hover:text-green-900 transition">All
+                                    Deals</a>
+                                <a href="#"
+                                    class="block py-4 text-green-700 hover:text-green-900 transition">Contact</a>
+                            </div>
+                            <div class="border-b-2 border-dashed border-gray-300"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center text-gray-500 text-sm p-4">
+        Copyright Information Goes Here 2012 - All Rights Reserved<br>
+        Designed by ThemesKingdom
+    </div>
+</body>
+
+</html>
