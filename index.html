@@ -11,7 +11,6 @@
 </head>
 
 <body class="bg-color font-sans">
-    <!-- Header -->
     <header
         class="w-full mx-auto my-4 md:my-8 gap-8 px-8 sm:px-16 md:px-24 lg:px-40 pb-6 flex flex-col md:flex-row md:items-start md:justify-between">
         <div class="w-full md:w-1/2 text-center md:text-left">
@@ -118,10 +117,8 @@
     </header>
 
 
-    <!-- Unified Big Container -->
     <div class="w-full px-8 sm:px-16 md:px-24 lg:px-40 box-border">
         <div class="w-full mx-auto my-8 p-2 sm:p-4 md:p-6 lg:p-10 bg-white shadow-md">
-            <!-- Main Deal Section -->
             <div class="flex-responsive gap-6 md:gap-10 mx-2 md:mx-4 items-stretch h-full">
                 <div class="w-full md:w-2/3 mb-4 md:mb-0 flex flex-col h-full">
                     <h2 class="text-3xl font-bold mb-4 md:mb-8">This is one very amazing deal</h2>
@@ -135,10 +132,19 @@
                 </div>
                 <aside class="w-full mt-2 md:mt-0 mb-4 md:w-1/3 pl-0 md:pl-4 flex flex-col items-center h-full">
                     <div
-                        class="coupon-box w-full max-w-md md:max-w-full mx-auto bg-white border border-gray-200 relative p-3 md:p-4 pt-6 mb-3 md:mb-4 flex flex-col items-center">
+                        class="coupon-box w-full max-w-md md:max-w-full mx-auto bg-white border border-gray-200 relative p-3 md:p-4 pt-6 mb-3 md:mb-4 flex flex-col items-center serrated">
 
+                        <div class="serrated-top">
+                            <div class="serrated-circle"></div>
+                            <div class="serrated-circle"></div>
+                            <div class="serrated-circle"></div>
+                            <div class="serrated-circle"></div>
+                            <div class="serrated-circle"></div>
+                            <div class="serrated-circle"></div>
+                            <div class="serrated-circle"></div>
+                        </div>
                         <div class="coupon-bg absolute inset-0 pointer-events-none"></div>
-                        <div class="relative z-10 w-full flex flex-col items-center">
+                        <div class="relative z-10 w-full flex flex-col items-center mt-4">
                             <div class="text-gray-400 font-semibold text-base text-center">This deal will end in:</div>
                             <div class="w-full my-2 text-center">
                                 <div class="h-px bg-gray-200"></div>
@@ -163,7 +169,7 @@
                                 </div>
                             </div>
                             <div class="w-full border-t-2 border-dashed border-gray-200 mb-4"></div>
-                            <div class="flex flex-wrap gap-3 w-full mb-4 mt-4 justify-center">
+                            <div class="flex flex-wrap gap-3 w-full mb-8 mt-4 justify-center">
                                 <div class="flex items-center space-x-2 flex-1">
                                     <button type="button"
                                         class="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded border border-blue-300 bg-gradient-to-b from-white to-blue-50 shadow-sm w-full">
@@ -190,6 +196,15 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="serrated-bottom">
+                            <div class="serrated-circle-bottom"></div>
+                            <div class="serrated-circle-bottom"></div>
+                            <div class="serrated-circle-bottom"></div>
+                            <div class="serrated-circle-bottom"></div>
+                            <div class="serrated-circle-bottom"></div>
+                            <div class="serrated-circle-bottom"></div>
+                            <div class="serrated-circle-bottom"></div>
+                        </div>
                     </div>
                     <button
                         class="text-lg md:text-xl w-full max-w-md md:max-w-full mx-auto mt-2 py-3 md:py-4 rounded-lg md:rounded-xl btn-color text-green-900 font-semibold shadow border border-green-300 transition">
@@ -197,7 +212,6 @@
                 </aside>
             </div>
 
-            <!-- Banner for font text -->
             <div class="mt-8 mb-2 banner-container">
                 <div class="w-full py-6 sm:py-8 border-t-2 border-b-2 border-dashed border-gray-300 bg-white">
                     <div class="flex flex-row justify-center items-center gap-10 sm:gap-16 md:gap-24 lg:gap-32">
@@ -222,10 +236,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Combined 6-cell grid: 3 deals + 3 info blocks -->
             <div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-2 mt-4 ">
-                    <!-- Row 1: Deals -->
                     <div class="text-center md:border-r-2 ml-4 border-dashed border-gray-300 partial-bottom-dash">
                         <div class="font-semibold text-lg text-left mb-2 pl-2">Lorem Ipsum Dolor Deal &nbsp;&nbsp;
                         </div>
@@ -316,7 +328,6 @@
                                 DEAL</button>
                         </div>
                     </div>
-                    <!-- Row 2: Info blocks -->
                     <div class="ml-4 pt-6 md:border-r-2 border-dashed border-gray-300">
                         <h3 class="font-bold mb-4 text-[20px]">About Our Deals</h3>
                         <p class="text-gray-500 leading-relaxed mb-6">Lorem ipsum dolor sit amet, consectetur

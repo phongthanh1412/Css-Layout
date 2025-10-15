@@ -1,5 +1,3 @@
-
-
 /* ==========. Body/Background ========== */
 .bg-color {
   background: linear-gradient(180deg, #c9ccc6 100%);
@@ -29,15 +27,21 @@
 
 /* ==========. Main Deal/Coupon Box ========== */
 .coupon-box {
-  border-radius: 16px;
+  border-radius: 0;
   background: #fff;
-  border: 1.5px solid #959596; /* light gray */
-  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.08);
+  border: 1.5px solid #959596; 
 }
 .coupon-bg {
   opacity: 0.12;
   z-index: 0;
   border-radius: 8px;
+  /* Net grid background */
+  background-image:
+    repeating-linear-gradient(135deg, #222 0 1px, transparent 1px 20px),
+    repeating-linear-gradient(45deg, #222 0 1px, transparent 1px 20px);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 0;
+  filter: blur(1px);
 }
 .btn-color {
   background: linear-gradient(180deg, #e0efc6 0%, #b2d98c 100%);
@@ -58,6 +62,59 @@
 }
 .btn-subscribe:hover {
   background: linear-gradient(180deg, #b0c2d1 0%, #8fa3b3 100%);
+}
+
+/* ========== Decorative ========== */
+.serrated {
+  position: relative;
+  overflow: visible;
+}
+
+.serrated-top {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0px; 
+  width: 100%;
+  height: 12px;
+  z-index: 2;
+  justify-content: space-evenly;
+  pointer-events: none;
+  border: none;
+}
+
+.serrated-circle {
+  width: 30px;
+  height: 14px; 
+  background: white; 
+  border-radius: 0 0 24px 24px; 
+  border: #959596 1px solid;
+  border-top: none;
+  margin-top: -1px; 
+}
+
+/* Bottom serrated edge */
+.serrated-bottom {
+  display: flex;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 13px;
+  z-index: 2;
+  justify-content: space-evenly;
+  pointer-events: none;
+  border: none;
+}
+
+.serrated-circle-bottom {
+  width: 30px;
+  height: 14px;
+  background: white;
+  border-radius: 24px 24px 0 0;
+  border: #959596 1px solid;
+  border-bottom: none;
+  margin-bottom: -1px;
 }
 
 /* ========== Grid/Info Blocks ========== */
@@ -83,37 +140,7 @@
   z-index: 0;
 }
 
-/* ========== Misc/Decorative ========== */
-.serrated {
-  position: relative;
-  overflow: visible;
-}
-.serrated-top,
-.serrated-bottom {
-  display: flex;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 12px;
-  z-index: 2;
-  justify-content: space-around;
-}
-.serrated-top {
-  top: -12px;
-  flex-direction: row;
-}
-.serrated-bottom {
-  bottom: -12px;
-  flex-direction: row;
-}
-.serrated-circle {
-  width: 24px;
-  height: 24px;
-  background: #fff;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.03);
-  margin-left: -6px;
-}
+
 
 /* ==========  Layout Helpers ========== */
 .flex-responsive {
@@ -140,6 +167,7 @@
   /* Banner container and text spacing */
   .banner-container .flex {
     margin-bottom: 0.75rem;
+    
   }
 
   .banner-container .flex:last-child {
@@ -329,7 +357,6 @@
 
 /* Prevent banner overflow at large screens */
 @media (min-width: 1024px) {
-  /* Banner: allow wrapping, center, use gap, like 769px+ */
   .banner-container .flex-row {
     display: flex;
     flex-wrap: wrap;
