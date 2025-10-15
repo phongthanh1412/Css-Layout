@@ -1,22 +1,11 @@
 
-/* ========== 1. General Utility & Safari Fallbacks ========== */
-@media (min-width: 1324px) {
-  .coupon-box .flex-wrap {
-    flex-direction: row !important;
-    flex-wrap: nowrap !important;
-    justify-content: center;
-  }
-}
 
-/* Safari Flexbox and Gradient Fallbacks */
-/* ...existing code for Safari fallbacks here... */
-
-/* ========== 2. Body/Background ========== */
+/* ==========. Body/Background ========== */
 .bg-color {
   background: linear-gradient(180deg, #c9ccc6 100%);
 }
 
-/* ========== 3. Header & Navigation ========== */
+/* ==========. Header & Navigation ========== */
 .nav-dash-sep {
   display: inline-block;
   vertical-align: middle;
@@ -29,7 +18,7 @@
   color: #7a807a;
 }
 
-/* ========== 4. Banner Section ========== */
+/* ==========. Banner Section ========== */
 .banner-container .flex {
   margin-bottom: 0;
   white-space: nowrap;
@@ -38,7 +27,7 @@
   margin-right: 0.5rem;
 }
 
-/* ========== 5. Main Deal/Coupon Box ========== */
+/* ==========. Main Deal/Coupon Box ========== */
 .coupon-box {
   border-radius: 16px;
   background: #fff;
@@ -71,7 +60,7 @@
   background: linear-gradient(180deg, #b0c2d1 0%, #8fa3b3 100%);
 }
 
-/* ========== 6. Grid/Info Blocks ========== */
+/* ========== Grid/Info Blocks ========== */
 .deal-image {
   background-color: rgb(247, 74, 74);
 }
@@ -87,14 +76,14 @@
   border-bottom: 2px dashed #D1D5DB;
 }
 
-/* ========== 7. Footer ========== */
+/* ========== Footer ========== */
 .envelope-bg {
   background: repeating-linear-gradient(135deg, #e53e3e 0 20px, #3182ce 0 40px);
   opacity: 0.2;
   z-index: 0;
 }
 
-/* ========== 8. Misc/Decorative ========== */
+/* ========== Misc/Decorative ========== */
 .serrated {
   position: relative;
   overflow: visible;
@@ -126,47 +115,14 @@
   margin-left: -6px;
 }
 
-/* ========== 9. Layout Helpers ========== */
+/* ==========  Layout Helpers ========== */
 .flex-responsive {
   display: flex;
   flex-direction: column;
 }
 
-/* Ultra small device styles (max-width: 320px) */
-@media (max-width: 320px) {
-  .text-8xl { font-size: 2.2rem; line-height: 0.85; }
-  .text-6xl { font-size: 1.7rem; }
-  .text-3xl { font-size: 1rem; }
-  .text-2xl { font-size: 0.85rem; }
-  nav a { font-size: 0.7rem; padding-left: 0.15rem; padding-right: 0.15rem; }
-  .py-10.px-20 { padding: 0.5rem 0.1rem; }
-  .banner-container .flex { margin-bottom: 0.5rem; }
-}
-
-/* Small mobile device styles (max-width: 375px) */
-@media (max-width: 375px) {
-  .text-8xl { font-size: 2.5rem; }
-  .text-6xl { font-size: 2rem; }
-  .text-3xl { font-size: 1.1rem; }
-  .text-2xl { font-size: 0.95rem; }
-  nav a { font-size: 0.72rem; padding-left: 0.18rem; padding-right: 0.18rem; }
-  .py-10.px-20 { padding: 0.6rem 0.15rem; }
-  .banner-container .flex { margin-bottom: 0.6rem; }
-}
-
-/* Large mobile device styles (max-width: 425px) */
-@media (max-width: 425px) {
-  .text-8xl { font-size: 2.8rem; }
-  .text-6xl { font-size: 2.2rem; }
-  .text-3xl { font-size: 1.2rem; }
-  .text-2xl { font-size: 1rem; }
-  nav a { font-size: 0.74rem; padding-left: 0.2rem; padding-right: 0.2rem; }
-  .py-10.px-20 { padding: 0.7rem 0.2rem; }
-  .banner-container .flex { margin-bottom: 0.7rem; }
-}
-
 /* Extra small device styles */
-@media (max-width: 480px) {
+@media (max-width: 375px) {
 
   /* Header and Title */
   .text-8xl {
@@ -389,5 +345,13 @@
   }
   .banner-container .text-xl {
     font-size: 1rem;
+  }
+}
+
+@media (min-width: 1324px) {
+  .coupon-box .flex-wrap {
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: center;
   }
 }
